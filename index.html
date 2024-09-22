@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WDD 131 Home Page for Bruno Nascimento">
+  <meta name="author" content="Bruno Nascimento">
+  <meta name="keywords" content="Bruno, Nascimento">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/base.css">
+  <title>WDD 131 - Dynamic Web Fundamentals - Bruno Nascimento</title>
 </head>
+
 <body>
-    <h1>WDD 131</h1>
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals - Bruno Nascimento</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="https://www.linkedin.com/in/bruno-nascimento-93b55911a/" target="_blank">LinkedIn Profile page</a>
+      <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/4?lang=eng" target="_blank">Favorite Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="grid-container">
+      <div class="rounded-box1">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Bruno Nascimento" width="200">
+        <p>
+          I am 31 years old, married for 10 years, and I have two beautiful children. I love my family, and everything I do is for them. I am finishing my degree in Accounting this year, and I want to add Software Development to my career, and BYUI is helping me achieve my goals.
+        </p>
+        <h3>Sorocaba, Brazil</h3>
+        <hr>
+        <img src="images/sorocaba.jpeg" alt="Sorocaba, Brazil" width="200" class="img-left">
+        <p>
+          I have lived in Sorocaba for 29 years, a city in the interior of São Paulo State, Brazil. I was practically born here, and I love this city and all the conveniences it offers.
+        </p>
+      </div>
+    
+      <div class="rounded-box2">
+        <section>
+          <h2>Web Dev Resources</h2>
+          <p>Open these resources in a new window</p>
+          <ul>
+            <li><a href="https://validator.w3.org/nu/" target="_blank">HTML Checker Website</a></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Checker Website</a></li>
+            <li><a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">W3 School: HTML Basics</a></li>
+            <li><a href="https://youtu.be/fYq5PXgSsbE/" target="_blank">Flex Box Video Tutorial</a></li>
+            <li><a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a></li>
+            <li><a href="https://www.youtube.com/watch?v=4lWqMugJAzU/" target="_blank">How to Use CSS Flexbox Inside CSS Grid</a></li>
+            <li><a href="https://www.w3schools.com/css/css3_borders.asp" target="_blank">CSS Rounded Corners</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Bruno Nascimento, Sorocaba, Brazil.</p>
+    <p id="lastModified"></p>
+  </footer>
+  
+  <script>
+    // Populate the current year
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    
+    // Populate last modified date
+    document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+  </script>
+  
+  <script src="scripts/getdates.js" defer></script>
 </body>
+
 </html>
