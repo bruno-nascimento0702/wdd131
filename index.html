@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles/base.css">
   <title>WDD 131 - Dynamic Web Fundamentals - Bruno Nascimento</title>
-</head>
+  <script src="scripts/getdates.js" defer></script>
 
 <body>
   <header>
@@ -63,16 +63,6 @@
     <p>&copy; <span id="currentyear"></span> Bruno Nascimento, Sorocaba, Brazil.</p>
     <p id="lastModified"></p>
   </footer>
-  
-  <script>
-    // Populate the current year
-    document.getElementById('currentyear').textContent = new Date().getFullYear();
-    
-    // Populate last modified date
-    document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
-  </script>
-  
-  <script src="scripts/getdates.js" defer></script>
 </body>
 
 </html>
