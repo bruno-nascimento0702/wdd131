@@ -37,6 +37,7 @@
         width: 50%;
         text-align: left;
         padding: 0 0 0 1rem;
+        display: flex;
     }
     
     .weather h2{
@@ -48,6 +49,8 @@
         width: 50%;
         text-align: left;
         padding: 0 0 0 1rem;
+        display: flex;
+        align-items: center;
     }
     
     .weather h2::after {

@@ -73,19 +73,14 @@ figcaption {
     text-align: left;
 }
 
-/* https://www.iconfinder.com/icons/1530374/weather_day_sand_sandstorm_sun_icon */
 .weather h2::after {
-    content: url(../images/weather-icon.svg);
-    display: block;
+    display: flex;
     width: 15%;
-    margin: auto;
+    margin: 0;
+    align-items: center;
+    
 }
 
-.icon-img {
-    display: block;
-    margin: 0 auto;
-    width: 150%;
-}
 
 #chill-button {
     text-align: center;
@@ -107,4 +102,11 @@ figcaption {
 
 .pad {
     padding-bottom: 1rem;
+}
+
+.weather-icon {
+    width: 24px;
+    height: 24px; 
+    vertical-align: middle; 
+    margin-left: 8px; 
 }
